@@ -1,0 +1,6 @@
+// Avoid pusshing unnecessary file in repository
+node_modules 
+.env 
+logs 
+playwright-report 
+test-results
