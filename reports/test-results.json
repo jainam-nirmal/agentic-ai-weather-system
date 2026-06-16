@@ -103,7 +103,7 @@
             {
               "title": "Scenario 1: Upload Valid PDF File",
               "file": "demo-test/allFileUpload.spec.js",
-              "line": 170,
+              "line": 168,
               "column": 8,
               "specs": [
                 {
@@ -122,7 +122,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6354,
+                          "duration": 6498,
                           "errors": [],
                           "stdout": [
                             {
@@ -197,23 +197,23 @@
                           "steps": [
                             {
                               "title": "GIVEN: Browser is launched with a fresh context",
-                              "duration": 786
+                              "duration": 800
                             },
                             {
                               "title": " GIVEN: A valid PDF file is prepared for upload",
-                              "duration": 10
+                              "duration": 8
                             },
                             {
                               "title": "📋 File Details",
-                              "duration": 75
+                              "duration": 49
                             },
                             {
                               "title": " WHEN: User navigates to DemoQA upload page",
-                              "duration": 3199
+                              "duration": 3376
                             },
                             {
                               "title": "WHEN: User uploads the PDF file",
-                              "duration": 1841
+                              "duration": 1830
                             },
                             {
                               "title": "THEN: Uploaded file path is displayed on the page",
@@ -221,18 +221,18 @@
                             },
                             {
                               "title": "📋 Upload Result",
-                              "duration": 2
-                            },
-                            {
-                              "title": "Validation Results",
                               "duration": 3
                             },
                             {
+                              "title": "Validation Results",
+                              "duration": 2
+                            },
+                            {
                               "title": " Cleanup: Close browser resources",
-                              "duration": 409
+                              "duration": 401
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:28.960Z",
+                          "startTime": "2026-06-16T09:08:29.142Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -258,7 +258,7 @@
                   ],
                   "id": "7f9259e8960bba9306d8-4ae3df8988c56a4b8cd0",
                   "file": "demo-test/allFileUpload.spec.js",
-                  "line": 172,
+                  "line": 170,
                   "column": 5
                 }
               ]
@@ -266,7 +266,7 @@
             {
               "title": "Scenario 2: Upload Valid TXT File",
               "file": "demo-test/allFileUpload.spec.js",
-              "line": 181,
+              "line": 179,
               "column": 8,
               "specs": [
                 {
@@ -285,7 +285,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 6149,
+                          "duration": 5795,
                           "errors": [],
                           "stdout": [
                             {
@@ -360,42 +360,42 @@
                           "steps": [
                             {
                               "title": "GIVEN: Browser is launched with a fresh context",
-                              "duration": 966
+                              "duration": 552
                             },
                             {
                               "title": " GIVEN: A valid Text file is prepared for upload",
-                              "duration": 6
-                            },
-                            {
-                              "title": "📋 File Details",
                               "duration": 3
                             },
                             {
+                              "title": "📋 File Details",
+                              "duration": 2
+                            },
+                            {
                               "title": " WHEN: User navigates to DemoQA upload page",
-                              "duration": 2906
+                              "duration": 2850
                             },
                             {
                               "title": "WHEN: User uploads the Text file",
-                              "duration": 1857
+                              "duration": 1829
                             },
                             {
                               "title": "THEN: Uploaded file path is displayed on the page",
-                              "duration": 11
+                              "duration": 14
                             },
                             {
                               "title": "📋 Upload Result",
-                              "duration": 1
+                              "duration": 2
                             },
                             {
                               "title": "Validation Results",
-                              "duration": 1
+                              "duration": 3
                             },
                             {
                               "title": " Cleanup: Close browser resources",
-                              "duration": 392
+                              "duration": 534
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:35.350Z",
+                          "startTime": "2026-06-16T09:08:35.669Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -421,7 +421,7 @@
                   ],
                   "id": "7f9259e8960bba9306d8-5e1d86249d3222c3ea7b",
                   "file": "demo-test/allFileUpload.spec.js",
-                  "line": 183,
+                  "line": 181,
                   "column": 5
                 }
               ]
@@ -429,7 +429,7 @@
             {
               "title": "Scenario 3: Reject PDF File Exceeding Size Limit",
               "file": "demo-test/allFileUpload.spec.js",
-              "line": 192,
+              "line": 190,
               "column": 8,
               "specs": [
                 {
@@ -448,7 +448,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4201,
+                          "duration": 3846,
                           "errors": [],
                           "stdout": [
                             {
@@ -458,19 +458,19 @@
                               "text": "✓ Upload page opened: https://demoqa.com/upload-download\n"
                             },
                             {
-                              "text": "✓ Large file located: LargeMB_TestFiles.pdf\n"
+                              "text": "✓ Large file located: LargeMB_TestFile.pdf\n"
                             },
                             {
-                              "text": "{\n  \"fileName\": \"LargeMB_TestFiles.pdf\",\n  \"filePath\": \"D:\\\\infoBeans\\\\Learning\\\\Demo\\\\agentic-ai-weather-system\\\\agentic-ai-weather-system\\\\test-data\\\\file-types\\\\LargeMB_TestFiles.pdf\",\n  \"extension\": \".pdf\",\n  \"sizeInMB\": 2.2,\n  \"maxSizeMB\": 2,\n  \"isAllowedType\": true,\n  \"isWithinSizeLimit\": false\n}\n"
+                              "text": "{\n  \"fileName\": \"LargeMB_TestFile.pdf\",\n  \"filePath\": \"D:\\\\infoBeans\\\\Learning\\\\Demo\\\\agentic-ai-weather-system\\\\agentic-ai-weather-system\\\\test-data\\\\file-types\\\\LargeMB_TestFile.pdf\",\n  \"extension\": \".pdf\",\n  \"sizeInMB\": 5.25,\n  \"maxSizeMB\": 2,\n  \"isAllowedType\": true,\n  \"isWithinSizeLimit\": false\n}\n"
                             },
                             {
-                              "text": "File size: 2.2 MB | Max allowed: 2 MB\n"
+                              "text": "File size: 5.25 MB | Max allowed: 2 MB\n"
                             },
                             {
                               "text": "✓ File correctly identified as exceeding size limit\n"
                             },
                             {
-                              "text": "{\n  \"fileName\": \"LargeMB_TestFiles.pdf\",\n  \"reason\": \"File size exceeds 2 MB limit\",\n  \"fileSizeMB\": 2.2,\n  \"maxAllowedMB\": 2,\n  \"status\": \"Rejected\"\n}\n"
+                              "text": "{\n  \"fileName\": \"LargeMB_TestFile.pdf\",\n  \"reason\": \"File size exceeds 2 MB limit\",\n  \"fileSizeMB\": 5.25,\n  \"maxAllowedMB\": 2,\n  \"status\": \"Rejected\"\n}\n"
                             },
                             {
                               "text": "\n───────────────────────────────────────────────────────────\n"
@@ -485,7 +485,7 @@
                               "text": "1. PASS - File Exists\n"
                             },
                             {
-                              "text": "   Details: D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\LargeMB_TestFiles.pdf\n"
+                              "text": "   Details: D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\LargeMB_TestFile.pdf\n"
                             },
                             {
                               "text": "2. PASS - File Type Allowed\n"
@@ -497,7 +497,7 @@
                               "text": "3. PASS - File Exceeds Size Limit\n"
                             },
                             {
-                              "text": "   Details: 2.2 MB exceeds 2 MB by 0.20 MB\n"
+                              "text": "   Details: 5.25 MB exceeds 2 MB by 3.25 MB\n"
                             },
                             {
                               "text": "───────────────────────────────────────────────────────────\n\n"
@@ -511,19 +511,19 @@
                           "steps": [
                             {
                               "title": "✅ GIVEN: Browser is launched with a fresh context",
-                              "duration": 819
+                              "duration": 666
                             },
                             {
                               "title": "✅ GIVEN: User is on the DemoQA upload page",
-                              "duration": 2952
+                              "duration": 2900
                             },
                             {
                               "title": "✅ GIVEN: A large PDF file exceeding 2 MB exists",
-                              "duration": 4
+                              "duration": 2
                             },
                             {
                               "title": "📋 📄 Large File Details",
-                              "duration": 2
+                              "duration": 3
                             },
                             {
                               "title": "⏳ WHEN: File size is validated against upload rules",
@@ -531,11 +531,11 @@
                             },
                             {
                               "title": "✅ THEN: File should be rejected for exceeding size limit",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": "📋 🚫 Rejection Summary",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": "Validation Results",
@@ -543,26 +543,26 @@
                             },
                             {
                               "title": "🧹 Cleanup: Close browser resources",
-                              "duration": 413
+                              "duration": 269
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:41.515Z",
+                          "startTime": "2026-06-16T09:08:41.479Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "📄 Large File Details",
                               "contentType": "application/json",
-                              "body": "ewogICJmaWxlTmFtZSI6ICJMYXJnZU1CX1Rlc3RGaWxlcy5wZGYiLAogICJmaWxlUGF0aCI6ICJEOlxcaW5mb0JlYW5zXFxMZWFybmluZ1xcRGVtb1xcYWdlbnRpYy1haS13ZWF0aGVyLXN5c3RlbVxcYWdlbnRpYy1haS13ZWF0aGVyLXN5c3RlbVxcdGVzdC1kYXRhXFxmaWxlLXR5cGVzXFxMYXJnZU1CX1Rlc3RGaWxlcy5wZGYiLAogICJleHRlbnNpb24iOiAiLnBkZiIsCiAgInNpemVJbk1CIjogMi4yLAogICJtYXhTaXplTUIiOiAyLAogICJpc0FsbG93ZWRUeXBlIjogdHJ1ZSwKICAiaXNXaXRoaW5TaXplTGltaXQiOiBmYWxzZQp9"
+                              "body": "ewogICJmaWxlTmFtZSI6ICJMYXJnZU1CX1Rlc3RGaWxlLnBkZiIsCiAgImZpbGVQYXRoIjogIkQ6XFxpbmZvQmVhbnNcXExlYXJuaW5nXFxEZW1vXFxhZ2VudGljLWFpLXdlYXRoZXItc3lzdGVtXFxhZ2VudGljLWFpLXdlYXRoZXItc3lzdGVtXFx0ZXN0LWRhdGFcXGZpbGUtdHlwZXNcXExhcmdlTUJfVGVzdEZpbGUucGRmIiwKICAiZXh0ZW5zaW9uIjogIi5wZGYiLAogICJzaXplSW5NQiI6IDUuMjUsCiAgIm1heFNpemVNQiI6IDIsCiAgImlzQWxsb3dlZFR5cGUiOiB0cnVlLAogICJpc1dpdGhpblNpemVMaW1pdCI6IGZhbHNlCn0="
                             },
                             {
                               "name": "🚫 Rejection Summary",
                               "contentType": "application/json",
-                              "body": "ewogICJmaWxlTmFtZSI6ICJMYXJnZU1CX1Rlc3RGaWxlcy5wZGYiLAogICJyZWFzb24iOiAiRmlsZSBzaXplIGV4Y2VlZHMgMiBNQiBsaW1pdCIsCiAgImZpbGVTaXplTUIiOiAyLjIsCiAgIm1heEFsbG93ZWRNQiI6IDIsCiAgInN0YXR1cyI6ICJSZWplY3RlZCIKfQ=="
+                              "body": "ewogICJmaWxlTmFtZSI6ICJMYXJnZU1CX1Rlc3RGaWxlLnBkZiIsCiAgInJlYXNvbiI6ICJGaWxlIHNpemUgZXhjZWVkcyAyIE1CIGxpbWl0IiwKICAiZmlsZVNpemVNQiI6IDUuMjUsCiAgIm1heEFsbG93ZWRNQiI6IDIsCiAgInN0YXR1cyI6ICJSZWplY3RlZCIKfQ=="
                             },
                             {
                               "name": "Validation Results",
                               "contentType": "application/json",
-                              "body": "WwogIHsKICAgICJuYW1lIjogIkZpbGUgRXhpc3RzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcTGFyZ2VNQl9UZXN0RmlsZXMucGRmIgogIH0sCiAgewogICAgIm5hbWUiOiAiRmlsZSBUeXBlIEFsbG93ZWQiLAogICAgInBhc3NlZCI6IHRydWUsCiAgICAiZGV0YWlscyI6ICJFeHRlbnNpb246IC5wZGYiCiAgfSwKICB7CiAgICAibmFtZSI6ICJGaWxlIEV4Y2VlZHMgU2l6ZSBMaW1pdCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIjIuMiBNQiBleGNlZWRzIDIgTUIgYnkgMC4yMCBNQiIKICB9Cl0="
+                              "body": "WwogIHsKICAgICJuYW1lIjogIkZpbGUgRXhpc3RzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcTGFyZ2VNQl9UZXN0RmlsZS5wZGYiCiAgfSwKICB7CiAgICAibmFtZSI6ICJGaWxlIFR5cGUgQWxsb3dlZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIkV4dGVuc2lvbjogLnBkZiIKICB9LAogIHsKICAgICJuYW1lIjogIkZpbGUgRXhjZWVkcyBTaXplIExpbWl0IiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiNS4yNSBNQiBleGNlZWRzIDIgTUIgYnkgMy4yNSBNQiIKICB9Cl0="
                             }
                           ]
                         }
@@ -572,7 +572,7 @@
                   ],
                   "id": "7f9259e8960bba9306d8-282e5a9ceb696f767cf5",
                   "file": "demo-test/allFileUpload.spec.js",
-                  "line": 194,
+                  "line": 192,
                   "column": 5
                 }
               ]
@@ -580,7 +580,7 @@
             {
               "title": "Scenario 4: Reject Invalid File Type",
               "file": "demo-test/allFileUpload.spec.js",
-              "line": 272,
+              "line": 270,
               "column": 8,
               "specs": [
                 {
@@ -599,7 +599,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4588,
+                          "duration": 3871,
                           "errors": [],
                           "stdout": [
                             {
@@ -656,27 +656,27 @@
                           "steps": [
                             {
                               "title": "✅ GIVEN: Browser is launched with a fresh context",
-                              "duration": 994
+                              "duration": 542
                             },
                             {
                               "title": "✅ GIVEN: User is on the DemoQA upload page",
-                              "duration": 2865
+                              "duration": 2962
                             },
                             {
                               "title": "✅ GIVEN: An invalid PNG file exists for upload",
-                              "duration": 3
+                              "duration": 2
                             },
                             {
                               "title": "📋 📄 Invalid File Details",
-                              "duration": 3
+                              "duration": 1
                             },
                             {
                               "title": "⏳ WHEN: File type is validated against allowed extensions",
-                              "duration": 0
+                              "duration": 1
                             },
                             {
                               "title": "✅ THEN: File should be rejected for invalid type",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": "📋 🚫 Rejection Summary",
@@ -684,14 +684,14 @@
                             },
                             {
                               "title": "Validation Results",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": "🧹 Cleanup: Close browser resources",
-                              "duration": 715
+                              "duration": 357
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:45.731Z",
+                          "startTime": "2026-06-16T09:08:45.337Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -717,7 +717,7 @@
                   ],
                   "id": "7f9259e8960bba9306d8-ebf76eb6db5dca267728",
                   "file": "demo-test/allFileUpload.spec.js",
-                  "line": 274,
+                  "line": 272,
                   "column": 5
                 }
               ]
@@ -762,7 +762,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1612,
+                          "duration": 1662,
                           "errors": [],
                           "stdout": [
                             {
@@ -772,7 +772,7 @@
                               "text": "Weather API called successfully\n"
                             },
                             {
-                              "text": "{\n  \"city\": \"Bhopal\",\n  \"country\": \"India\",\n  \"current\": {\n    \"temperature\": \"34.5°C\",\n    \"condition\": \"Mainly clear\",\n    \"windSpeed\": \"5.1 km/h\",\n    \"isDay\": true,\n    \"observedAt\": \"2026-06-16T13:30\"\n  },\n  \"today\": {\n    \"date\": \"2026-06-16\",\n    \"high\": \"34.5°C\",\n    \"low\": \"25.1°C\",\n    \"precipitation\": \"1.2 mm\",\n    \"maxWind\": \"11.5 km/h\",\n    \"condition\": \"Code 53\"\n  },\n  \"_meta\": {\n    \"geoStatusCode\": 200,\n    \"forecastStatusCode\": 200,\n    \"lat\": 23.25469,\n    \"lon\": 77.40289\n  }\n}\n"
+                              "text": "{\n  \"city\": \"Bhopal\",\n  \"country\": \"India\",\n  \"current\": {\n    \"temperature\": \"34.7°C\",\n    \"condition\": \"Overcast\",\n    \"windSpeed\": \"6.7 km/h\",\n    \"isDay\": true,\n    \"observedAt\": \"2026-06-16T14:30\"\n  },\n  \"today\": {\n    \"date\": \"2026-06-16\",\n    \"high\": \"34.7°C\",\n    \"low\": \"22.4°C\",\n    \"precipitation\": \"2 mm\",\n    \"maxWind\": \"16.1 km/h\",\n    \"condition\": \"Code 61\"\n  },\n  \"_meta\": {\n    \"geoStatusCode\": 200,\n    \"forecastStatusCode\": 200,\n    \"lat\": 23.25469,\n    \"lon\": 77.40289\n  }\n}\n"
                             },
                             {
                               "text": "Both API calls returned HTTP 200\n"
@@ -784,13 +784,13 @@
                               "text": "Current Weather Data:\n"
                             },
                             {
-                              "text": "┌─────────────┬────────────────┐\n│ (index)     │ Values         │\n├─────────────┼────────────────┤\n│ Temperature │ \u001b[32m'34.5°C'\u001b[39m       │\n│ Condition   │ \u001b[32m'Mainly clear'\u001b[39m │\n│ Wind Speed  │ \u001b[32m'5.1 km/h'\u001b[39m     │\n│ Day/Night   │ \u001b[32m'Daytime'\u001b[39m      │\n└─────────────┴────────────────┘\n"
+                              "text": "┌─────────────┬────────────┐\n│ (index)     │ Values     │\n├─────────────┼────────────┤\n│ Temperature │ \u001b[32m'34.7°C'\u001b[39m   │\n│ Condition   │ \u001b[32m'Overcast'\u001b[39m │\n│ Wind Speed  │ \u001b[32m'6.7 km/h'\u001b[39m │\n│ Day/Night   │ \u001b[32m'Daytime'\u001b[39m  │\n└─────────────┴────────────┘\n"
                             },
                             {
                               "text": "Today's Forecast:\n"
                             },
                             {
-                              "text": "┌───────────────┬──────────────┐\n│ (index)       │ Values       │\n├───────────────┼──────────────┤\n│ Date          │ \u001b[32m'2026-06-16'\u001b[39m │\n│ High          │ \u001b[32m'34.5°C'\u001b[39m     │\n│ Low           │ \u001b[32m'25.1°C'\u001b[39m     │\n│ Precipitation │ \u001b[32m'1.2 mm'\u001b[39m     │\n│ Max Wind      │ \u001b[32m'11.5 km/h'\u001b[39m  │\n│ Condition     │ \u001b[32m'Code 53'\u001b[39m    │\n└───────────────┴──────────────┘\n"
+                              "text": "┌───────────────┬──────────────┐\n│ (index)       │ Values       │\n├───────────────┼──────────────┤\n│ Date          │ \u001b[32m'2026-06-16'\u001b[39m │\n│ High          │ \u001b[32m'34.7°C'\u001b[39m     │\n│ Low           │ \u001b[32m'22.4°C'\u001b[39m     │\n│ Precipitation │ \u001b[32m'2 mm'\u001b[39m       │\n│ Max Wind      │ \u001b[32m'16.1 km/h'\u001b[39m  │\n│ Condition     │ \u001b[32m'Code 61'\u001b[39m    │\n└───────────────┴──────────────┘\n"
                             },
                             {
                               "text": "Geographic Coordinates:\n"
@@ -808,7 +808,7 @@
                               "text": "═══════════════════════════════════════════════════════════\n"
                             },
                             {
-                              "text": "┌───────────────┬─────────────────┐\n│ (index)       │ Values          │\n├───────────────┼─────────────────┤\n│ Location      │ \u001b[32m'Bhopal, India'\u001b[39m │\n│ Latitude      │ \u001b[33m23.25469\u001b[39m        │\n│ Longitude     │ \u001b[33m77.40289\u001b[39m        │\n│ Temperature   │ \u001b[32m'34.5°C'\u001b[39m        │\n│ Condition     │ \u001b[32m'Mainly clear'\u001b[39m  │\n│ Wind Speed    │ \u001b[32m'5.1 km/h'\u001b[39m      │\n│ Is Day        │ \u001b[32m'Yes'\u001b[39m           │\n│ Today High    │ \u001b[32m'34.5°C'\u001b[39m        │\n│ Today Low     │ \u001b[32m'25.1°C'\u001b[39m        │\n│ Precipitation │ \u001b[32m'1.2 mm'\u001b[39m        │\n│ Max Wind      │ \u001b[32m'11.5 km/h'\u001b[39m     │\n│ Forecast      │ \u001b[32m'Code 53'\u001b[39m       │\n└───────────────┴─────────────────┘\n"
+                              "text": "┌───────────────┬─────────────────┐\n│ (index)       │ Values          │\n├───────────────┼─────────────────┤\n│ Location      │ \u001b[32m'Bhopal, India'\u001b[39m │\n│ Latitude      │ \u001b[33m23.25469\u001b[39m        │\n│ Longitude     │ \u001b[33m77.40289\u001b[39m        │\n│ Temperature   │ \u001b[32m'34.7°C'\u001b[39m        │\n│ Condition     │ \u001b[32m'Overcast'\u001b[39m      │\n│ Wind Speed    │ \u001b[32m'6.7 km/h'\u001b[39m      │\n│ Is Day        │ \u001b[32m'Yes'\u001b[39m           │\n│ Today High    │ \u001b[32m'34.7°C'\u001b[39m        │\n│ Today Low     │ \u001b[32m'22.4°C'\u001b[39m        │\n│ Precipitation │ \u001b[32m'2 mm'\u001b[39m          │\n│ Max Wind      │ \u001b[32m'16.1 km/h'\u001b[39m     │\n│ Forecast      │ \u001b[32m'Code 61'\u001b[39m       │\n└───────────────┴─────────────────┘\n"
                             },
                             {
                               "text": "═══════════════════════════════════════════════════════════\n"
@@ -850,13 +850,13 @@
                               "text": "5. PASS - Current Weather Data Valid\n"
                             },
                             {
-                              "text": "   Details: Temp: 34.5°C, Condition: Mainly clear\n"
+                              "text": "   Details: Temp: 34.7°C, Condition: Overcast\n"
                             },
                             {
                               "text": "6. PASS - Today's Forecast Valid\n"
                             },
                             {
-                              "text": "   Details: High: 34.5°C, Low: 25.1°C\n"
+                              "text": "   Details: High: 34.7°C, Low: 22.4°C\n"
                             },
                             {
                               "text": "7. PASS - Geographic Coordinates Valid\n"
@@ -873,68 +873,68 @@
                           "steps": [
                             {
                               "title": "GIVEN: User requests weather data for Bhopal",
-                              "duration": 1
+                              "duration": 0
                             },
                             {
                               "title": "⏳ WHEN: Weather API is called",
-                              "duration": 1555
+                              "duration": 1622
                             },
                             {
                               "title": "📋 Full API Response",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": "THEN: Response contains valid weather data",
-                              "duration": 38,
+                              "duration": 26,
                               "steps": [
                                 {
                                   "title": "Step 1: Validate HTTP Status Codes",
-                                  "duration": 4
+                                  "duration": 2
                                 },
                                 {
                                   "title": "Step 2: Validate Location Information",
-                                  "duration": 4
+                                  "duration": 3
                                 },
                                 {
                                   "title": "Step 3: Validate Current Weather Data",
-                                  "duration": 11
+                                  "duration": 5
                                 },
                                 {
                                   "title": "Step 4: Validate Today's Forecast",
-                                  "duration": 11
+                                  "duration": 7
                                 },
                                 {
                                   "title": "Step 5: Validate Geographic Coordinates",
-                                  "duration": 7
+                                  "duration": 6
                                 }
                               ]
                             },
                             {
                               "title": "🌍 Weather Report Summary",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": "Validation Results",
                               "duration": 1
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:50.471Z",
+                          "startTime": "2026-06-16T09:08:49.309Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "Full API Response",
                               "contentType": "application/json",
-                              "body": "ewogICJjaXR5IjogIkJob3BhbCIsCiAgImNvdW50cnkiOiAiSW5kaWEiLAogICJjdXJyZW50IjogewogICAgInRlbXBlcmF0dXJlIjogIjM0LjXCsEMiLAogICAgImNvbmRpdGlvbiI6ICJNYWlubHkgY2xlYXIiLAogICAgIndpbmRTcGVlZCI6ICI1LjEga20vaCIsCiAgICAiaXNEYXkiOiB0cnVlLAogICAgIm9ic2VydmVkQXQiOiAiMjAyNi0wNi0xNlQxMzozMCIKICB9LAogICJ0b2RheSI6IHsKICAgICJkYXRlIjogIjIwMjYtMDYtMTYiLAogICAgImhpZ2giOiAiMzQuNcKwQyIsCiAgICAibG93IjogIjI1LjHCsEMiLAogICAgInByZWNpcGl0YXRpb24iOiAiMS4yIG1tIiwKICAgICJtYXhXaW5kIjogIjExLjUga20vaCIsCiAgICAiY29uZGl0aW9uIjogIkNvZGUgNTMiCiAgfSwKICAiX21ldGEiOiB7CiAgICAiZ2VvU3RhdHVzQ29kZSI6IDIwMCwKICAgICJmb3JlY2FzdFN0YXR1c0NvZGUiOiAyMDAsCiAgICAibGF0IjogMjMuMjU0NjksCiAgICAibG9uIjogNzcuNDAyODkKICB9Cn0="
+                              "body": "ewogICJjaXR5IjogIkJob3BhbCIsCiAgImNvdW50cnkiOiAiSW5kaWEiLAogICJjdXJyZW50IjogewogICAgInRlbXBlcmF0dXJlIjogIjM0LjfCsEMiLAogICAgImNvbmRpdGlvbiI6ICJPdmVyY2FzdCIsCiAgICAid2luZFNwZWVkIjogIjYuNyBrbS9oIiwKICAgICJpc0RheSI6IHRydWUsCiAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTA2LTE2VDE0OjMwIgogIH0sCiAgInRvZGF5IjogewogICAgImRhdGUiOiAiMjAyNi0wNi0xNiIsCiAgICAiaGlnaCI6ICIzNC43wrBDIiwKICAgICJsb3ciOiAiMjIuNMKwQyIsCiAgICAicHJlY2lwaXRhdGlvbiI6ICIyIG1tIiwKICAgICJtYXhXaW5kIjogIjE2LjEga20vaCIsCiAgICAiY29uZGl0aW9uIjogIkNvZGUgNjEiCiAgfSwKICAiX21ldGEiOiB7CiAgICAiZ2VvU3RhdHVzQ29kZSI6IDIwMCwKICAgICJmb3JlY2FzdFN0YXR1c0NvZGUiOiAyMDAsCiAgICAibGF0IjogMjMuMjU0NjksCiAgICAibG9uIjogNzcuNDAyODkKICB9Cn0="
                             },
                             {
                               "name": "Weather Report Summary",
                               "contentType": "application/json",
-                              "body": "ewogICJMb2NhdGlvbiI6ICJCaG9wYWwsIEluZGlhIiwKICAiTGF0aXR1ZGUiOiAyMy4yNTQ2OSwKICAiTG9uZ2l0dWRlIjogNzcuNDAyODksCiAgIlRlbXBlcmF0dXJlIjogIjM0LjXCsEMiLAogICJDb25kaXRpb24iOiAiTWFpbmx5IGNsZWFyIiwKICAiV2luZCBTcGVlZCI6ICI1LjEga20vaCIsCiAgIklzIERheSI6ICJZZXMiLAogICJUb2RheSBIaWdoIjogIjM0LjXCsEMiLAogICJUb2RheSBMb3ciOiAiMjUuMcKwQyIsCiAgIlByZWNpcGl0YXRpb24iOiAiMS4yIG1tIiwKICAiTWF4IFdpbmQiOiAiMTEuNSBrbS9oIiwKICAiRm9yZWNhc3QiOiAiQ29kZSA1MyIKfQ=="
+                              "body": "ewogICJMb2NhdGlvbiI6ICJCaG9wYWwsIEluZGlhIiwKICAiTGF0aXR1ZGUiOiAyMy4yNTQ2OSwKICAiTG9uZ2l0dWRlIjogNzcuNDAyODksCiAgIlRlbXBlcmF0dXJlIjogIjM0LjfCsEMiLAogICJDb25kaXRpb24iOiAiT3ZlcmNhc3QiLAogICJXaW5kIFNwZWVkIjogIjYuNyBrbS9oIiwKICAiSXMgRGF5IjogIlllcyIsCiAgIlRvZGF5IEhpZ2giOiAiMzQuN8KwQyIsCiAgIlRvZGF5IExvdyI6ICIyMi40wrBDIiwKICAiUHJlY2lwaXRhdGlvbiI6ICIyIG1tIiwKICAiTWF4IFdpbmQiOiAiMTYuMSBrbS9oIiwKICAiRm9yZWNhc3QiOiAiQ29kZSA2MSIKfQ=="
                             },
                             {
                               "name": "Validation Results",
                               "contentType": "application/json",
-                              "body": "WwogIHsKICAgICJuYW1lIjogIkdlbyBBUEkgU3RhdHVzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiU3RhdHVzOiAyMDAiCiAgfSwKICB7CiAgICAibmFtZSI6ICJGb3JlY2FzdCBBUEkgU3RhdHVzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiU3RhdHVzOiAyMDAiCiAgfSwKICB7CiAgICAibmFtZSI6ICJDaXR5IE5hbWUgUHJlc2VudCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIkNpdHk6IEJob3BhbCIKICB9LAogIHsKICAgICJuYW1lIjogIkNvdW50cnkgTmFtZSBQcmVzZW50IiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiQ291bnRyeTogSW5kaWEiCiAgfSwKICB7CiAgICAibmFtZSI6ICJDdXJyZW50IFdlYXRoZXIgRGF0YSBWYWxpZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIlRlbXA6IDM0LjXCsEMsIENvbmRpdGlvbjogTWFpbmx5IGNsZWFyIgogIH0sCiAgewogICAgIm5hbWUiOiAiVG9kYXkncyBGb3JlY2FzdCBWYWxpZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIkhpZ2g6IDM0LjXCsEMsIExvdzogMjUuMcKwQyIKICB9LAogIHsKICAgICJuYW1lIjogIkdlb2dyYXBoaWMgQ29vcmRpbmF0ZXMgVmFsaWQiLAogICAgInBhc3NlZCI6IHRydWUsCiAgICAiZGV0YWlscyI6ICJMYXQ6IDIzLjI1NDY5LCBMb246IDc3LjQwMjg5IgogIH0KXQ=="
+                              "body": "WwogIHsKICAgICJuYW1lIjogIkdlbyBBUEkgU3RhdHVzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiU3RhdHVzOiAyMDAiCiAgfSwKICB7CiAgICAibmFtZSI6ICJGb3JlY2FzdCBBUEkgU3RhdHVzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiU3RhdHVzOiAyMDAiCiAgfSwKICB7CiAgICAibmFtZSI6ICJDaXR5IE5hbWUgUHJlc2VudCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIkNpdHk6IEJob3BhbCIKICB9LAogIHsKICAgICJuYW1lIjogIkNvdW50cnkgTmFtZSBQcmVzZW50IiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiQ291bnRyeTogSW5kaWEiCiAgfSwKICB7CiAgICAibmFtZSI6ICJDdXJyZW50IFdlYXRoZXIgRGF0YSBWYWxpZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIlRlbXA6IDM0LjfCsEMsIENvbmRpdGlvbjogT3ZlcmNhc3QiCiAgfSwKICB7CiAgICAibmFtZSI6ICJUb2RheSdzIEZvcmVjYXN0IFZhbGlkIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiSGlnaDogMzQuN8KwQywgTG93OiAyMi40wrBDIgogIH0sCiAgewogICAgIm5hbWUiOiAiR2VvZ3JhcGhpYyBDb29yZGluYXRlcyBWYWxpZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIkxhdDogMjMuMjU0NjksIExvbjogNzcuNDAyODkiCiAgfQpd"
                             }
                           ]
                         }
@@ -971,14 +971,14 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12,
+                          "duration": 13,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "✓ Token generated (preview): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ...\n"
                             },
                             {
-                              "text": "{\n  \"tokenPreview\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ...\",\n  \"header\": {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoicWFfZW5naW5lZXIiLCJyb2xlIjoidGVzdGVyIiwiaWF0IjoxNzgxNTk3MDMyLCJleHAiOjE3ODE2MDA2MzJ9.D779yAdk8qh-w2mF8_TsDsSVKXLqPc2W8jy2kR1zbGs\"\n  }\n}\n"
+                              "text": "{\n  \"tokenPreview\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ...\",\n  \"header\": {\n    \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoicWFfZW5naW5lZXIiLCJyb2xlIjoidGVzdGVyIiwiaWF0IjoxNzgxNjAwOTMwLCJleHAiOjE3ODE2MDQ1MzB9.UBfCuSBkOg8wtxq1pL3rIwAmxkAPMT4qaEE172qTsFo\"\n  }\n}\n"
                             },
                             {
                               "text": " Request sent to protected endpoint\n"
@@ -1010,15 +1010,15 @@
                           "steps": [
                             {
                               "title": "GIVEN: Valid JWT token is generated",
-                              "duration": 3
+                              "duration": 2
                             },
                             {
                               "title": "📋 Generated JWT Token",
-                              "duration": 1
+                              "duration": 2
                             },
                             {
                               "title": "WHEN: Token is sent to protected endpoint",
-                              "duration": 1
+                              "duration": 2
                             },
                             {
                               "title": "THEN: Access should be granted with 200 status",
@@ -1029,13 +1029,13 @@
                               "duration": 1
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:52.096Z",
+                          "startTime": "2026-06-16T09:08:50.987Z",
                           "annotations": [],
                           "attachments": [
                             {
                               "name": "Generated JWT Token",
                               "contentType": "application/json",
-                              "body": "ewogICJ0b2tlblByZXZpZXciOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5Si4uLiIsCiAgImhlYWRlciI6IHsKICAgICJBdXRob3JpemF0aW9uIjogIkJlYXJlciBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2pFc0luVnpaWEp1WVcxbElqb2ljV0ZmWlc1bmFXNWxaWElpTENKeWIyeGxJam9pZEdWemRHVnlJaXdpYVdGMElqb3hOemd4TlRrM01ETXlMQ0psZUhBaU9qRTNPREUyTURBMk16SjkuRDc3OXlBZGs4cWgtdzJtRjhfVHNEc1NWS1hMcVBjMlc4ankya1IxemJHcyIKICB9Cn0="
+                              "body": "ewogICJ0b2tlblByZXZpZXciOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5Si4uLiIsCiAgImhlYWRlciI6IHsKICAgICJBdXRob3JpemF0aW9uIjogIkJlYXJlciBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKMWMyVnlTV1FpT2pFc0luVnpaWEp1WVcxbElqb2ljV0ZmWlc1bmFXNWxaWElpTENKeWIyeGxJam9pZEdWemRHVnlJaXdpYVdGMElqb3hOemd4TmpBd09UTXdMQ0psZUhBaU9qRTNPREUyTURRMU16QjkuVUJmQ3VTQmtPZzh3dHhxMXBMM3JJd0FteGtBUE1UNHFhRUUxNzJxVHNGbyIKICB9Cn0="
                             },
                             {
                               "name": "JWT Valid Token Response",
@@ -1077,7 +1077,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 16,
+                          "duration": 25,
                           "errors": [],
                           "stdout": [
                             {
@@ -1110,11 +1110,11 @@
                           "steps": [
                             {
                               "title": "GIVEN: Expired JWT token is generated",
-                              "duration": 11
+                              "duration": 19
                             },
                             {
                               "title": " WHEN: Expired token is sent to protected endpoint",
-                              "duration": 0
+                              "duration": 1
                             },
                             {
                               "title": "THEN: Access should be denied with 401 status",
@@ -1125,7 +1125,7 @@
                               "duration": 1
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:52.116Z",
+                          "startTime": "2026-06-16T09:08:51.016Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1168,7 +1168,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 9,
+                          "duration": 6,
                           "errors": [],
                           "stdout": [
                             {
@@ -1205,18 +1205,18 @@
                             },
                             {
                               "title": "WHEN: Tampered token is sent to protected endpoint",
-                              "duration": 0
+                              "duration": 1
                             },
                             {
                               "title": " THEN: Access should be denied with 401 status",
-                              "duration": 3
+                              "duration": 1
                             },
                             {
                               "title": " JWT Tampered Token Response",
                               "duration": 2
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:52.146Z",
+                          "startTime": "2026-06-16T09:08:51.060Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1259,7 +1259,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 5,
+                          "duration": 4,
                           "errors": [],
                           "stdout": [
                             {
@@ -1300,14 +1300,14 @@
                             },
                             {
                               "title": "THEN: Access should be denied with 401 status",
-                              "duration": 2
+                              "duration": 1
                             },
                             {
                               "title": " JWT Missing Token Response",
-                              "duration": 1
+                              "duration": 2
                             }
                           ],
-                          "startTime": "2026-06-16T08:03:52.175Z",
+                          "startTime": "2026-06-16T09:08:51.077Z",
                           "annotations": [],
                           "attachments": [
                             {
@@ -1335,8 +1335,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-16T08:03:28.019Z",
-    "duration": 24412.509000000002,
+    "startTime": "2026-06-16T09:08:28.397Z",
+    "duration": 22943.085,
     "expected": 9,
     "skipped": 0,
     "unexpected": 0,

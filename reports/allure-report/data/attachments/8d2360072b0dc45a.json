@@ -1,7 +1,0 @@
-{
-  "fileName": "LargeMB_TestFiles.pdf",
-  "reason": "File size exceeds 2 MB limit",
-  "fileSizeMB": 2.2,
-  "maxAllowedMB": 2,
-  "status": "Rejected"
-}

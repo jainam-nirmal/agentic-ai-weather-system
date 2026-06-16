@@ -163,9 +163,7 @@ async function runValidFileUploadTest(fileName, fileTypeLabel) {
 
 test.describe('📁 DemoQA All File Types Upload - Enhanced BDD', () => {
 
-  // ════════════════════════════════════════════════════════════
-  //  SCENARIO 1: Upload Valid PDF File
-  // ════════════════════════════════════════════════════════════
+  
 
   test.describe('Scenario 1: Upload Valid PDF File', () => {
 
@@ -193,7 +191,7 @@ test.describe('📁 DemoQA All File Types Upload - Enhanced BDD', () => {
 
     test('Should identify large PDF file that exceeds 2 MB limit', async () => {
 
-      const largeFile = path.resolve('./test-data/file-types/LargeMB_TestFiles.pdf');
+      const largeFile = path.resolve('./test-data/file-types/LargeMB_TestFile.pdf');
       const validations = [];
       let browser, context, page, fileDetails;
 

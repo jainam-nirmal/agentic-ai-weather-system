@@ -1,0 +1,97 @@
+Requesting weather data for: Bhopal
+Weather API called successfully
+{
+  "city": "Bhopal",
+  "country": "India",
+  "current": {
+    "temperature": "34.7°C",
+    "condition": "Overcast",
+    "windSpeed": "6.7 km/h",
+    "isDay": true,
+    "observedAt": "2026-06-16T14:30"
+  },
+  "today": {
+    "date": "2026-06-16",
+    "high": "34.7°C",
+    "low": "22.4°C",
+    "precipitation": "2 mm",
+    "maxWind": "16.1 km/h",
+    "condition": "Code 61"
+  },
+  "_meta": {
+    "geoStatusCode": 200,
+    "forecastStatusCode": 200,
+    "lat": 23.25469,
+    "lon": 77.40289
+  }
+}
+Both API calls returned HTTP 200
+Location: Bhopal, India
+Current Weather Data:
+┌─────────────┬────────────┐
+│ (index)     │ Values     │
+├─────────────┼────────────┤
+│ Temperature │ '34.7°C'   │
+│ Condition   │ 'Overcast' │
+│ Wind Speed  │ '6.7 km/h' │
+│ Day/Night   │ 'Daytime'  │
+└─────────────┴────────────┘
+Today's Forecast:
+┌───────────────┬──────────────┐
+│ (index)       │ Values       │
+├───────────────┼──────────────┤
+│ Date          │ '2026-06-16' │
+│ High          │ '34.7°C'     │
+│ Low           │ '22.4°C'     │
+│ Precipitation │ '2 mm'       │
+│ Max Wind      │ '16.1 km/h'  │
+│ Condition     │ 'Code 61'    │
+└───────────────┴──────────────┘
+Geographic Coordinates:
+┌───────────┬──────────┐
+│ (index)   │ Values   │
+├───────────┼──────────┤
+│ Latitude  │ 23.25469 │
+│ Longitude │ 77.40289 │
+│ Valid     │ 'Yes'    │
+└───────────┴──────────┘
+═══════════════════════════════════════════════════════════
+   Weather Report — Bhopal, India
+═══════════════════════════════════════════════════════════
+┌───────────────┬─────────────────┐
+│ (index)       │ Values          │
+├───────────────┼─────────────────┤
+│ Location      │ 'Bhopal, India' │
+│ Latitude      │ 23.25469        │
+│ Longitude     │ 77.40289        │
+│ Temperature   │ '34.7°C'        │
+│ Condition     │ 'Overcast'      │
+│ Wind Speed    │ '6.7 km/h'      │
+│ Is Day        │ 'Yes'           │
+│ Today High    │ '34.7°C'        │
+│ Today Low     │ '22.4°C'        │
+│ Precipitation │ '2 mm'          │
+│ Max Wind      │ '16.1 km/h'     │
+│ Forecast      │ 'Code 61'       │
+└───────────────┴─────────────────┘
+═══════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────
+VALIDATION RESULTS:
+───────────────────────────────────────────────────────────
+1. PASS - Geo API Status
+   Details: Status: 200
+2. PASS - Forecast API Status
+   Details: Status: 200
+3. PASS - City Name Present
+   Details: City: Bhopal
+4. PASS - Country Name Present
+   Details: Country: India
+5. PASS - Current Weather Data Valid
+   Details: Temp: 34.7°C, Condition: Overcast
+6. PASS - Today's Forecast Valid
+   Details: High: 34.7°C, Low: 22.4°C
+7. PASS - Geographic Coordinates Valid
+   Details: Lat: 23.25469, Lon: 77.40289
+───────────────────────────────────────────────────────────
+

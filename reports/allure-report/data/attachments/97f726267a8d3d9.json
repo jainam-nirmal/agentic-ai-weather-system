@@ -1,0 +1,25 @@
+{
+  "city": "Bhopal",
+  "country": "India",
+  "current": {
+    "temperature": "34.7°C",
+    "condition": "Overcast",
+    "windSpeed": "6.7 km/h",
+    "isDay": true,
+    "observedAt": "2026-06-16T14:30"
+  },
+  "today": {
+    "date": "2026-06-16",
+    "high": "34.7°C",
+    "low": "22.4°C",
+    "precipitation": "2 mm",
+    "maxWind": "16.1 km/h",
+    "condition": "Code 61"
+  },
+  "_meta": {
+    "geoStatusCode": 200,
+    "forecastStatusCode": 200,
+    "lat": 23.25469,
+    "lon": 77.40289
+  }
+}
