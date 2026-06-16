@@ -17,8 +17,9 @@ class GeoCodingService{
                 timeout:process.env.REQUEST_TIMEOUT
 
              })
-
-             console.log(`Get URL response ${JSON.stringify(response.data)}`)
+             console.log("*********** getCordinates logs response ********************")
+             console.log(`Get URL response ${JSON.stringify(response.data,null,2 )}`)
+             console.log("*********** getCordinates logs response ********************")
 
             const cityData = response.data.results?.[0];
 

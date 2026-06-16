@@ -75,7 +75,7 @@ class WeatherAgent {
         Logger.info('Analyzing weather with AI...');
         const prompt = weatherPrompt.buildPrompts(weatherData);
         const analysis = await ollamaService.analzyeWeather(prompt);
-        Logger.success('AI analysis complete.');
+        Logger.success('AI analysis complete and below is the advice ...');
         return analysis;
     }
 

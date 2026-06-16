@@ -28,8 +28,8 @@ class WeatherService{
              const current = response.data.current;
 
              console.log("*********** current logs response ********************")
-             console.log(JSON.stringify(current))
-
+             console.log(JSON.stringify(current, null, 2))
+             console.log("*********** current logs response ********************")
              return { 
                 temperature: current.temperature_2m, 
                 humidity: current.relative_humidity_2m, 
