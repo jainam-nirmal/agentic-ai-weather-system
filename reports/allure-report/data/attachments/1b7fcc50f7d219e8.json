@@ -1,0 +1,10 @@
+{
+  "fileName": "InvalidFileType.png",
+  "reason": "Invalid file type",
+  "extension": ".png",
+  "allowedTypes": [
+    ".pdf",
+    ".txt"
+  ],
+  "status": "Rejected"
+}

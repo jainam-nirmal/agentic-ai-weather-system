@@ -9,8 +9,8 @@ class Validator {
         if (cityName.trim() === "") {
             throw new Error("City name cannot be empty");
         }
-        if (cityName.length < 3) {
-            throw new Error("City name must be at least 3 characters long");
+        if (cityName.length < 2) {
+            throw new Error("City name must be at least 2 characters long");
         }
         return true;
     }

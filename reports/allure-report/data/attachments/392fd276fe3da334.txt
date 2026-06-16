@@ -1,0 +1,37 @@
+✓ Fresh browser context created
+✓ File ready: Sample.pdf
+{
+  "fileName": "Sample.pdf",
+  "filePath": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.pdf",
+  "extension": ".pdf",
+  "sizeInMB": 1.27,
+  "maxSizeMB": 2,
+  "isAllowedType": true,
+  "isWithinSizeLimit": true
+}
+✓ Upload page opened: https://demoqa.com/upload-download
+✓ File uploaded: Sample.pdf
+✓ Upload confirmed: C:\fakepath\Sample.pdf
+{
+  "fileName": "Sample.pdf",
+  "fileType": "PDF",
+  "uploadedPath": "C:\\fakepath\\Sample.pdf",
+  "status": "Success"
+}
+
+───────────────────────────────────────────────────────────
+VALIDATION RESULTS:
+───────────────────────────────────────────────────────────
+1. ✅ PASS - File Exists
+   Details: D:\infoBeans\Learning\Demo\agentic-ai-weather-system\agentic-ai-weather-system\test-data\file-types\Sample.pdf
+2. ✅ PASS - File Type Allowed
+   Details: Extension: .pdf
+3. ✅ PASS - File Size Within Limit
+   Details: 1.27 MB (max: 2 MB)
+4. ✅ PASS - Upload Path Visible
+   Details: C:\fakepath\Sample.pdf
+5. ✅ PASS - Uploaded File Name Matches
+   Details: Expected: Sample.pdf
+───────────────────────────────────────────────────────────
+
+✓ Browser closed

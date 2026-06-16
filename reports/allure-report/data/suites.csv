@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11263","Should identify large PDF file that exceeds 2 MB limit","","2026-06-16","passed","2026-06-16","📁 DemoQA All File Types Upload - Enhanced BDD > Scenario 3: Reject PDF File Exceeding Size Limit","demo-test\allFileUpload.spec.js","",""
+"","12341","Should upload PDF file and validate successful upload","","2026-06-16","passed","2026-06-16","📁 DemoQA All File Types Upload - Enhanced BDD > Scenario 1: Upload Valid PDF File","demo-test\allFileUpload.spec.js","",""
+"","11004","Should identify PNG file as invalid upload type","","2026-06-16","passed","2026-06-16","📁 DemoQA All File Types Upload - Enhanced BDD > Scenario 4: Reject Invalid File Type","demo-test\allFileUpload.spec.js","",""
+"","10285","Should upload TXT file and validate successful upload","","2026-06-16","passed","2026-06-16","📁 DemoQA All File Types Upload - Enhanced BDD > Scenario 2: Upload Valid TXT File","demo-test\allFileUpload.spec.js","",""

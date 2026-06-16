@@ -1,0 +1,739 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/demo-test"
+    ],
+    "configFile": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\playwright.config.js",
+    "rootDir": "D:/infoBeans/Learning/Demo/agentic-ai-weather-system/agentic-ai-weather-system/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/infoBeans/Learning/Demo/agentic-ai-weather-system/agentic-ai-weather-system/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/infoBeans/Learning/Demo/agentic-ai-weather-system/agentic-ai-weather-system/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report",
+          "open": "never",
+          "host": "localhost",
+          "port": 9323
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "resultsDir": "reports/allure-results",
+          "detail": true,
+          "suiteTitle": true,
+          "environmentInfo": {
+            "framework": "Playwright",
+            "node": "v24.15.0"
+          }
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo-test\\allFileUpload.spec.js",
+      "file": "demo-test/allFileUpload.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "📁 DemoQA All File Types Upload - Enhanced BDD",
+          "file": "demo-test/allFileUpload.spec.js",
+          "line": 149,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Scenario 1: Upload Valid PDF File",
+              "file": "demo-test/allFileUpload.spec.js",
+              "line": 155,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Should upload PDF file and validate successful upload",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12341,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✓ Fresh browser context created\n"
+                            },
+                            {
+                              "text": "✓ File ready: Sample.pdf\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"Sample.pdf\",\n  \"filePath\": \"D:\\\\infoBeans\\\\Learning\\\\Demo\\\\agentic-ai-weather-system\\\\agentic-ai-weather-system\\\\test-data\\\\file-types\\\\Sample.pdf\",\n  \"extension\": \".pdf\",\n  \"sizeInMB\": 1.27,\n  \"maxSizeMB\": 2,\n  \"isAllowedType\": true,\n  \"isWithinSizeLimit\": true\n}\n"
+                            },
+                            {
+                              "text": "✓ Upload page opened: https://demoqa.com/upload-download\n"
+                            },
+                            {
+                              "text": "✓ File uploaded: Sample.pdf\n"
+                            },
+                            {
+                              "text": "✓ Upload confirmed: C:\\fakepath\\Sample.pdf\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"Sample.pdf\",\n  \"fileType\": \"PDF\",\n  \"uploadedPath\": \"C:\\\\fakepath\\\\Sample.pdf\",\n  \"status\": \"Success\"\n}\n"
+                            },
+                            {
+                              "text": "\n───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "VALIDATION RESULTS:\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "1. ✅ PASS - File Exists\n"
+                            },
+                            {
+                              "text": "   Details: D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.pdf\n"
+                            },
+                            {
+                              "text": "2. ✅ PASS - File Type Allowed\n"
+                            },
+                            {
+                              "text": "   Details: Extension: .pdf\n"
+                            },
+                            {
+                              "text": "3. ✅ PASS - File Size Within Limit\n"
+                            },
+                            {
+                              "text": "   Details: 1.27 MB (max: 2 MB)\n"
+                            },
+                            {
+                              "text": "4. ✅ PASS - Upload Path Visible\n"
+                            },
+                            {
+                              "text": "   Details: C:\\fakepath\\Sample.pdf\n"
+                            },
+                            {
+                              "text": "5. ✅ PASS - Uploaded File Name Matches\n"
+                            },
+                            {
+                              "text": "   Details: Expected: Sample.pdf\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n\n"
+                            },
+                            {
+                              "text": "✓ Browser closed\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "✅ GIVEN: Browser is launched with a fresh context",
+                              "duration": 947
+                            },
+                            {
+                              "title": "✅ GIVEN: A valid PDF file is prepared for upload",
+                              "duration": 5
+                            },
+                            {
+                              "title": "📋 📄 File Details",
+                              "duration": 56
+                            },
+                            {
+                              "title": "⏳ WHEN: User navigates to DemoQA upload page",
+                              "duration": 9063
+                            },
+                            {
+                              "title": "⏳ WHEN: User uploads the PDF file",
+                              "duration": 1869
+                            },
+                            {
+                              "title": "✅ THEN: Uploaded file path is displayed on the page",
+                              "duration": 20
+                            },
+                            {
+                              "title": "📋 📤 Upload Result",
+                              "duration": 2
+                            },
+                            {
+                              "title": "✅ Validation Results",
+                              "duration": 1
+                            },
+                            {
+                              "title": "🧹 Cleanup: Close browser resources",
+                              "duration": 365
+                            }
+                          ],
+                          "startTime": "2026-06-16T04:47:38.480Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "📄 File Details",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJTYW1wbGUucGRmIiwKICAiZmlsZVBhdGgiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcU2FtcGxlLnBkZiIsCiAgImV4dGVuc2lvbiI6ICIucGRmIiwKICAic2l6ZUluTUIiOiAxLjI3LAogICJtYXhTaXplTUIiOiAyLAogICJpc0FsbG93ZWRUeXBlIjogdHJ1ZSwKICAiaXNXaXRoaW5TaXplTGltaXQiOiB0cnVlCn0="
+                            },
+                            {
+                              "name": "📤 Upload Result",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJTYW1wbGUucGRmIiwKICAiZmlsZVR5cGUiOiAiUERGIiwKICAidXBsb2FkZWRQYXRoIjogIkM6XFxmYWtlcGF0aFxcU2FtcGxlLnBkZiIsCiAgInN0YXR1cyI6ICJTdWNjZXNzIgp9"
+                            },
+                            {
+                              "name": "Validation Results",
+                              "contentType": "application/json",
+                              "body": "WwogIHsKICAgICJuYW1lIjogIkZpbGUgRXhpc3RzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcU2FtcGxlLnBkZiIKICB9LAogIHsKICAgICJuYW1lIjogIkZpbGUgVHlwZSBBbGxvd2VkIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRXh0ZW5zaW9uOiAucGRmIgogIH0sCiAgewogICAgIm5hbWUiOiAiRmlsZSBTaXplIFdpdGhpbiBMaW1pdCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIjEuMjcgTUIgKG1heDogMiBNQikiCiAgfSwKICB7CiAgICAibmFtZSI6ICJVcGxvYWQgUGF0aCBWaXNpYmxlIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiQzpcXGZha2VwYXRoXFxTYW1wbGUucGRmIgogIH0sCiAgewogICAgIm5hbWUiOiAiVXBsb2FkZWQgRmlsZSBOYW1lIE1hdGNoZXMiLAogICAgInBhc3NlZCI6IHRydWUsCiAgICAiZGV0YWlscyI6ICJFeHBlY3RlZDogU2FtcGxlLnBkZiIKICB9Cl0="
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7f9259e8960bba9306d8-4ae3df8988c56a4b8cd0",
+                  "file": "demo-test/allFileUpload.spec.js",
+                  "line": 157,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Scenario 2: Upload Valid TXT File",
+              "file": "demo-test/allFileUpload.spec.js",
+              "line": 166,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Should upload TXT file and validate successful upload",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10285,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✓ Fresh browser context created\n"
+                            },
+                            {
+                              "text": "✓ File ready: Sample.txt\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"Sample.txt\",\n  \"filePath\": \"D:\\\\infoBeans\\\\Learning\\\\Demo\\\\agentic-ai-weather-system\\\\agentic-ai-weather-system\\\\test-data\\\\file-types\\\\Sample.txt\",\n  \"extension\": \".txt\",\n  \"sizeInMB\": 0,\n  \"maxSizeMB\": 2,\n  \"isAllowedType\": true,\n  \"isWithinSizeLimit\": true\n}\n"
+                            },
+                            {
+                              "text": "✓ Upload page opened: https://demoqa.com/upload-download\n"
+                            },
+                            {
+                              "text": "✓ File uploaded: Sample.txt\n"
+                            },
+                            {
+                              "text": "✓ Upload confirmed: C:\\fakepath\\Sample.txt\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"Sample.txt\",\n  \"fileType\": \"Text\",\n  \"uploadedPath\": \"C:\\\\fakepath\\\\Sample.txt\",\n  \"status\": \"Success\"\n}\n"
+                            },
+                            {
+                              "text": "\n───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "VALIDATION RESULTS:\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "1. ✅ PASS - File Exists\n"
+                            },
+                            {
+                              "text": "   Details: D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.txt\n"
+                            },
+                            {
+                              "text": "2. ✅ PASS - File Type Allowed\n"
+                            },
+                            {
+                              "text": "   Details: Extension: .txt\n"
+                            },
+                            {
+                              "text": "3. ✅ PASS - File Size Within Limit\n"
+                            },
+                            {
+                              "text": "   Details: 0 MB (max: 2 MB)\n"
+                            },
+                            {
+                              "text": "4. ✅ PASS - Upload Path Visible\n"
+                            },
+                            {
+                              "text": "   Details: C:\\fakepath\\Sample.txt\n"
+                            },
+                            {
+                              "text": "5. ✅ PASS - Uploaded File Name Matches\n"
+                            },
+                            {
+                              "text": "   Details: Expected: Sample.txt\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n\n"
+                            },
+                            {
+                              "text": "✓ Browser closed\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "✅ GIVEN: Browser is launched with a fresh context",
+                              "duration": 515
+                            },
+                            {
+                              "title": "✅ GIVEN: A valid Text file is prepared for upload",
+                              "duration": 4
+                            },
+                            {
+                              "title": "📋 📄 File Details",
+                              "duration": 2
+                            },
+                            {
+                              "title": "⏳ WHEN: User navigates to DemoQA upload page",
+                              "duration": 7510
+                            },
+                            {
+                              "title": "⏳ WHEN: User uploads the Text file",
+                              "duration": 1856
+                            },
+                            {
+                              "title": "✅ THEN: Uploaded file path is displayed on the page",
+                              "duration": 20
+                            },
+                            {
+                              "title": "📋 📤 Upload Result",
+                              "duration": 2
+                            },
+                            {
+                              "title": "✅ Validation Results",
+                              "duration": 2
+                            },
+                            {
+                              "title": "🧹 Cleanup: Close browser resources",
+                              "duration": 369
+                            }
+                          ],
+                          "startTime": "2026-06-16T04:47:50.852Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "📄 File Details",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJTYW1wbGUudHh0IiwKICAiZmlsZVBhdGgiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcU2FtcGxlLnR4dCIsCiAgImV4dGVuc2lvbiI6ICIudHh0IiwKICAic2l6ZUluTUIiOiAwLAogICJtYXhTaXplTUIiOiAyLAogICJpc0FsbG93ZWRUeXBlIjogdHJ1ZSwKICAiaXNXaXRoaW5TaXplTGltaXQiOiB0cnVlCn0="
+                            },
+                            {
+                              "name": "📤 Upload Result",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJTYW1wbGUudHh0IiwKICAiZmlsZVR5cGUiOiAiVGV4dCIsCiAgInVwbG9hZGVkUGF0aCI6ICJDOlxcZmFrZXBhdGhcXFNhbXBsZS50eHQiLAogICJzdGF0dXMiOiAiU3VjY2VzcyIKfQ=="
+                            },
+                            {
+                              "name": "Validation Results",
+                              "contentType": "application/json",
+                              "body": "WwogIHsKICAgICJuYW1lIjogIkZpbGUgRXhpc3RzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcU2FtcGxlLnR4dCIKICB9LAogIHsKICAgICJuYW1lIjogIkZpbGUgVHlwZSBBbGxvd2VkIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRXh0ZW5zaW9uOiAudHh0IgogIH0sCiAgewogICAgIm5hbWUiOiAiRmlsZSBTaXplIFdpdGhpbiBMaW1pdCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIjAgTUIgKG1heDogMiBNQikiCiAgfSwKICB7CiAgICAibmFtZSI6ICJVcGxvYWQgUGF0aCBWaXNpYmxlIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiQzpcXGZha2VwYXRoXFxTYW1wbGUudHh0IgogIH0sCiAgewogICAgIm5hbWUiOiAiVXBsb2FkZWQgRmlsZSBOYW1lIE1hdGNoZXMiLAogICAgInBhc3NlZCI6IHRydWUsCiAgICAiZGV0YWlscyI6ICJFeHBlY3RlZDogU2FtcGxlLnR4dCIKICB9Cl0="
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7f9259e8960bba9306d8-5e1d86249d3222c3ea7b",
+                  "file": "demo-test/allFileUpload.spec.js",
+                  "line": 168,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Scenario 3: Reject PDF File Exceeding Size Limit",
+              "file": "demo-test/allFileUpload.spec.js",
+              "line": 177,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Should identify large PDF file that exceeds 2 MB limit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11263,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✓ Fresh browser context created\n"
+                            },
+                            {
+                              "text": "✓ Upload page opened: https://demoqa.com/upload-download\n"
+                            },
+                            {
+                              "text": "✓ Large file located: LargeMB_TestFile.pdf\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"LargeMB_TestFile.pdf\",\n  \"filePath\": \"D:\\\\infoBeans\\\\Learning\\\\Demo\\\\agentic-ai-weather-system\\\\agentic-ai-weather-system\\\\test-data\\\\file-types\\\\LargeMB_TestFile.pdf\",\n  \"extension\": \".pdf\",\n  \"sizeInMB\": 5.25,\n  \"maxSizeMB\": 2,\n  \"isAllowedType\": true,\n  \"isWithinSizeLimit\": false\n}\n"
+                            },
+                            {
+                              "text": "File size: 5.25 MB | Max allowed: 2 MB\n"
+                            },
+                            {
+                              "text": "✓ File correctly identified as exceeding size limit\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"LargeMB_TestFile.pdf\",\n  \"reason\": \"File size exceeds 2 MB limit\",\n  \"fileSizeMB\": 5.25,\n  \"maxAllowedMB\": 2,\n  \"status\": \"Rejected\"\n}\n"
+                            },
+                            {
+                              "text": "\n───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "VALIDATION RESULTS:\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "1. ✅ PASS - File Exists\n"
+                            },
+                            {
+                              "text": "   Details: D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\LargeMB_TestFile.pdf\n"
+                            },
+                            {
+                              "text": "2. ✅ PASS - File Type Allowed\n"
+                            },
+                            {
+                              "text": "   Details: Extension: .pdf\n"
+                            },
+                            {
+                              "text": "3. ✅ PASS - File Exceeds Size Limit\n"
+                            },
+                            {
+                              "text": "   Details: 5.25 MB exceeds 2 MB by 3.25 MB\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n\n"
+                            },
+                            {
+                              "text": "✓ Browser closed\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "✅ GIVEN: Browser is launched with a fresh context",
+                              "duration": 505
+                            },
+                            {
+                              "title": "✅ GIVEN: User is on the DemoQA upload page",
+                              "duration": 10402
+                            },
+                            {
+                              "title": "✅ GIVEN: A large PDF file exceeding 2 MB exists",
+                              "duration": 3
+                            },
+                            {
+                              "title": "📋 📄 Large File Details",
+                              "duration": 2
+                            },
+                            {
+                              "title": "⏳ WHEN: File size is validated against upload rules",
+                              "duration": 1
+                            },
+                            {
+                              "title": "✅ THEN: File should be rejected for exceeding size limit",
+                              "duration": 3
+                            },
+                            {
+                              "title": "📋 🚫 Rejection Summary",
+                              "duration": 1
+                            },
+                            {
+                              "title": "✅ Validation Results",
+                              "duration": 2
+                            },
+                            {
+                              "title": "🧹 Cleanup: Close browser resources",
+                              "duration": 342
+                            }
+                          ],
+                          "startTime": "2026-06-16T04:48:01.150Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "📄 Large File Details",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJMYXJnZU1CX1Rlc3RGaWxlLnBkZiIsCiAgImZpbGVQYXRoIjogIkQ6XFxpbmZvQmVhbnNcXExlYXJuaW5nXFxEZW1vXFxhZ2VudGljLWFpLXdlYXRoZXItc3lzdGVtXFxhZ2VudGljLWFpLXdlYXRoZXItc3lzdGVtXFx0ZXN0LWRhdGFcXGZpbGUtdHlwZXNcXExhcmdlTUJfVGVzdEZpbGUucGRmIiwKICAiZXh0ZW5zaW9uIjogIi5wZGYiLAogICJzaXplSW5NQiI6IDUuMjUsCiAgIm1heFNpemVNQiI6IDIsCiAgImlzQWxsb3dlZFR5cGUiOiB0cnVlLAogICJpc1dpdGhpblNpemVMaW1pdCI6IGZhbHNlCn0="
+                            },
+                            {
+                              "name": "🚫 Rejection Summary",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJMYXJnZU1CX1Rlc3RGaWxlLnBkZiIsCiAgInJlYXNvbiI6ICJGaWxlIHNpemUgZXhjZWVkcyAyIE1CIGxpbWl0IiwKICAiZmlsZVNpemVNQiI6IDUuMjUsCiAgIm1heEFsbG93ZWRNQiI6IDIsCiAgInN0YXR1cyI6ICJSZWplY3RlZCIKfQ=="
+                            },
+                            {
+                              "name": "Validation Results",
+                              "contentType": "application/json",
+                              "body": "WwogIHsKICAgICJuYW1lIjogIkZpbGUgRXhpc3RzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcTGFyZ2VNQl9UZXN0RmlsZS5wZGYiCiAgfSwKICB7CiAgICAibmFtZSI6ICJGaWxlIFR5cGUgQWxsb3dlZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIkV4dGVuc2lvbjogLnBkZiIKICB9LAogIHsKICAgICJuYW1lIjogIkZpbGUgRXhjZWVkcyBTaXplIExpbWl0IiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiNS4yNSBNQiBleGNlZWRzIDIgTUIgYnkgMy4yNSBNQiIKICB9Cl0="
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7f9259e8960bba9306d8-282e5a9ceb696f767cf5",
+                  "file": "demo-test/allFileUpload.spec.js",
+                  "line": 179,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Scenario 4: Reject Invalid File Type",
+              "file": "demo-test/allFileUpload.spec.js",
+              "line": 256,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Should identify PNG file as invalid upload type",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11004,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✓ Fresh browser context created\n"
+                            },
+                            {
+                              "text": "✓ Upload page opened: https://demoqa.com/upload-download\n"
+                            },
+                            {
+                              "text": "✓ Invalid file located: InvalidFileType.png\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"InvalidFileType.png\",\n  \"filePath\": \"D:\\\\infoBeans\\\\Learning\\\\Demo\\\\agentic-ai-weather-system\\\\agentic-ai-weather-system\\\\test-data\\\\file-types\\\\InvalidFileType.png\",\n  \"extension\": \".png\",\n  \"sizeInMB\": 0,\n  \"maxSizeMB\": 2,\n  \"isAllowedType\": false,\n  \"isWithinSizeLimit\": true\n}\n"
+                            },
+                            {
+                              "text": "File extension: .png | Allowed: .pdf, .txt\n"
+                            },
+                            {
+                              "text": "✓ File correctly identified as invalid type\n"
+                            },
+                            {
+                              "text": "{\n  \"fileName\": \"InvalidFileType.png\",\n  \"reason\": \"Invalid file type\",\n  \"extension\": \".png\",\n  \"allowedTypes\": [\n    \".pdf\",\n    \".txt\"\n  ],\n  \"status\": \"Rejected\"\n}\n"
+                            },
+                            {
+                              "text": "\n───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "VALIDATION RESULTS:\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n"
+                            },
+                            {
+                              "text": "1. ✅ PASS - File Exists\n"
+                            },
+                            {
+                              "text": "   Details: D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\InvalidFileType.png\n"
+                            },
+                            {
+                              "text": "2. ✅ PASS - File Type Not Allowed\n"
+                            },
+                            {
+                              "text": "   Details: .png is not in [.pdf, .txt]\n"
+                            },
+                            {
+                              "text": "───────────────────────────────────────────────────────────\n\n"
+                            },
+                            {
+                              "text": "✓ Browser closed\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "steps": [
+                            {
+                              "title": "✅ GIVEN: Browser is launched with a fresh context",
+                              "duration": 516
+                            },
+                            {
+                              "title": "✅ GIVEN: User is on the DemoQA upload page",
+                              "duration": 10098
+                            },
+                            {
+                              "title": "✅ GIVEN: An invalid PNG file exists for upload",
+                              "duration": 3
+                            },
+                            {
+                              "title": "📋 📄 Invalid File Details",
+                              "duration": 3
+                            },
+                            {
+                              "title": "⏳ WHEN: File type is validated against allowed extensions",
+                              "duration": 1
+                            },
+                            {
+                              "title": "✅ THEN: File should be rejected for invalid type",
+                              "duration": 2
+                            },
+                            {
+                              "title": "📋 🚫 Rejection Summary",
+                              "duration": 3
+                            },
+                            {
+                              "title": "✅ Validation Results",
+                              "duration": 3
+                            },
+                            {
+                              "title": "🧹 Cleanup: Close browser resources",
+                              "duration": 366
+                            }
+                          ],
+                          "startTime": "2026-06-16T04:48:12.426Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "📄 Invalid File Details",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJJbnZhbGlkRmlsZVR5cGUucG5nIiwKICAiZmlsZVBhdGgiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcSW52YWxpZEZpbGVUeXBlLnBuZyIsCiAgImV4dGVuc2lvbiI6ICIucG5nIiwKICAic2l6ZUluTUIiOiAwLAogICJtYXhTaXplTUIiOiAyLAogICJpc0FsbG93ZWRUeXBlIjogZmFsc2UsCiAgImlzV2l0aGluU2l6ZUxpbWl0IjogdHJ1ZQp9"
+                            },
+                            {
+                              "name": "🚫 Rejection Summary",
+                              "contentType": "application/json",
+                              "body": "ewogICJmaWxlTmFtZSI6ICJJbnZhbGlkRmlsZVR5cGUucG5nIiwKICAicmVhc29uIjogIkludmFsaWQgZmlsZSB0eXBlIiwKICAiZXh0ZW5zaW9uIjogIi5wbmciLAogICJhbGxvd2VkVHlwZXMiOiBbCiAgICAiLnBkZiIsCiAgICAiLnR4dCIKICBdLAogICJzdGF0dXMiOiAiUmVqZWN0ZWQiCn0="
+                            },
+                            {
+                              "name": "Validation Results",
+                              "contentType": "application/json",
+                              "body": "WwogIHsKICAgICJuYW1lIjogIkZpbGUgRXhpc3RzIiwKICAgICJwYXNzZWQiOiB0cnVlLAogICAgImRldGFpbHMiOiAiRDpcXGluZm9CZWFuc1xcTGVhcm5pbmdcXERlbW9cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXGFnZW50aWMtYWktd2VhdGhlci1zeXN0ZW1cXHRlc3QtZGF0YVxcZmlsZS10eXBlc1xcSW52YWxpZEZpbGVUeXBlLnBuZyIKICB9LAogIHsKICAgICJuYW1lIjogIkZpbGUgVHlwZSBOb3QgQWxsb3dlZCIsCiAgICAicGFzc2VkIjogdHJ1ZSwKICAgICJkZXRhaWxzIjogIi5wbmcgaXMgbm90IGluIFsucGRmLCAudHh0XSIKICB9Cl0="
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7f9259e8960bba9306d8-ebf76eb6db5dca267728",
+                  "file": "demo-test/allFileUpload.spec.js",
+                  "line": 258,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-16T04:47:37.772Z",
+    "duration": 45716.754,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

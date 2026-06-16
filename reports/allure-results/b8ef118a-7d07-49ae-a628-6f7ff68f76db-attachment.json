@@ -1,0 +1,27 @@
+[
+  {
+    "name": "File Exists",
+    "passed": true,
+    "details": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.txt"
+  },
+  {
+    "name": "File Type Allowed",
+    "passed": true,
+    "details": "Extension: .txt"
+  },
+  {
+    "name": "File Size Within Limit",
+    "passed": true,
+    "details": "0 MB (max: 2 MB)"
+  },
+  {
+    "name": "Upload Path Visible",
+    "passed": true,
+    "details": "C:\\fakepath\\Sample.txt"
+  },
+  {
+    "name": "Uploaded File Name Matches",
+    "passed": true,
+    "details": "Expected: Sample.txt"
+  }
+]

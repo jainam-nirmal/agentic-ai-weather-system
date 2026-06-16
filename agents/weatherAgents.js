@@ -2,7 +2,6 @@ import { chromium } from "playwright";
 import Validator from "../utils/validator.js";
 import Logger from "../utils/logger.js";
 import messages from "../constants/messages.js";
-import { config } from "../config/playwright.config.js";
 
 import geoCodingService from "../services/geocoding.service.js";
 import weatherService from "../services/weather.service.js";
@@ -20,12 +19,12 @@ class WeatherAgent {
 
     async launchAgent() {
         Logger.info(messages.APP_START);
-        this.browser = await chromium.launch({ headless: config.headless, slowMo: config.slowMo });
+        this.browser = await chromium.launch({ headless:true});
 
         const context = await this.browser.newContext();
         this.page = await context.newPage();
 
-        Logger.success("Browser launched successfully");
+        //Logger.success("Browser launched successfully");
     }
 
     async validateCity(cityName) {
@@ -37,7 +36,7 @@ class WeatherAgent {
             });
             const pageTitle = await this.page.title();
 
-            Logger.info(`City name : ${pageTitle}`)
+           
 
             if (!pageTitle.toLowerCase().includes(cityName.toLowerCase())) {
                 Logger.error(`City validation failed: ${cityName} is not a valid city`);

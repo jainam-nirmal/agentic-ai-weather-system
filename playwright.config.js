@@ -1,21 +1,21 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  testDir: '../tests',
+  testDir: './tests',
   fullyParallel: false,
   workers: 1,
 
   reporter: [
     ['list'],
     ['html', {
-      outputFolder: '../reports/html-report',
+      outputFolder: 'reports/html-report',
       open: 'never',
       host: 'localhost',
       port: 9323,
     }],
-    ['json', { outputFile: '../reports/test-results.json' }],
+    ['json', { outputFile: 'reports/test-results.json' }],
     ['allure-playwright', {
-      resultsDir: '../reports/allure-results',
+      resultsDir: 'reports/allure-results',
       detail: true,
       suiteTitle: true,
       environmentInfo: {

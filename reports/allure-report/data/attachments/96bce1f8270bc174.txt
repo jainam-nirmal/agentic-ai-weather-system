@@ -1,0 +1,35 @@
+✓ Fresh browser context created
+✓ Upload page opened: https://demoqa.com/upload-download
+✓ Invalid file located: InvalidFileType.png
+{
+  "fileName": "InvalidFileType.png",
+  "filePath": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\InvalidFileType.png",
+  "extension": ".png",
+  "sizeInMB": 0,
+  "maxSizeMB": 2,
+  "isAllowedType": false,
+  "isWithinSizeLimit": true
+}
+File extension: .png | Allowed: .pdf, .txt
+✓ File correctly identified as invalid type
+{
+  "fileName": "InvalidFileType.png",
+  "reason": "Invalid file type",
+  "extension": ".png",
+  "allowedTypes": [
+    ".pdf",
+    ".txt"
+  ],
+  "status": "Rejected"
+}
+
+───────────────────────────────────────────────────────────
+VALIDATION RESULTS:
+───────────────────────────────────────────────────────────
+1. ✅ PASS - File Exists
+   Details: D:\infoBeans\Learning\Demo\agentic-ai-weather-system\agentic-ai-weather-system\test-data\file-types\InvalidFileType.png
+2. ✅ PASS - File Type Not Allowed
+   Details: .png is not in [.pdf, .txt]
+───────────────────────────────────────────────────────────
+
+✓ Browser closed
