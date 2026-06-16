@@ -60,6 +60,7 @@ class WeatherAgent {
             return { 
                 city: cityCoordinates.city, 
                 country: cityCoordinates.country, 
+                state: cityCoordinates.state,
                 temperature: weatherDetails.temperature, 
                 humidity: weatherDetails.humidity,
                 windSpeed: weatherDetails.windSpeed, 

@@ -7,7 +7,7 @@ async function startApplication() {
     const weatherAgent = new WeatherAgent();
 
     try {
-        const cityName = readlineSync.question("Wwather city information for which city ?:");
+        const cityName = readlineSync.question("For which city do you want weather information ?:");
 
         await weatherAgent.launchAgent();
         const isValidCity = await weatherAgent.validateCity(cityName);
@@ -22,6 +22,8 @@ async function startApplication() {
         console.log('\n=================================');
         console.log(`CITY NAME: ${weatherDetails.city.toUpperCase()}`);
         console.log('\n=================================');
+        console.log(`Country: ${weatherDetails.country}`);  
+        console.log(`State: ${weatherDetails.state ?? 'N/A'}`);
         console.log(`Temperature: ${weatherDetails.temperature}°C`);
         console.log(`Humidity: ${weatherDetails.humidity}%`);
         console.log(`Wind Speed: ${weatherDetails.windSpeed} km/h`);

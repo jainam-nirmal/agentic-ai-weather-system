@@ -32,7 +32,8 @@ class GeoCodingService{
                 city:cityData.name,
                 latitude:cityData.latitude,
                 longitude:cityData.longitude,
-                country:cityData.country
+                country:cityData.country,
+                state: cityData.admin1 || null,
             }
 
      }

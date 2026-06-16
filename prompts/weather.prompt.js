@@ -4,6 +4,7 @@ class WeatherPrompts {
         return ` Your are a travel advisor specalist .
                  Analyze the weather data .
                  City: ${weatherData.city}
+                 State: ${weatherData.state ?? 'N/A'}
                  Country:${weatherData.country}
                  Temperature:${weatherData.temperature}
                  Humidity:${weatherData.humidity}

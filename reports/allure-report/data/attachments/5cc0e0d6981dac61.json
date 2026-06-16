@@ -1,0 +1,7 @@
+{
+  "Status": 401,
+  "Authenticated": "No",
+  "Error": "Missing or malformed Authorization header",
+  "User ID": "N/A",
+  "User Role": "N/A"
+}
