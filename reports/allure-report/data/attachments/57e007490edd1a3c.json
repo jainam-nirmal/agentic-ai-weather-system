@@ -1,0 +1,17 @@
+[
+  {
+    "name": "File Exists",
+    "passed": true,
+    "details": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\LargeMB_TestFiles.pdf"
+  },
+  {
+    "name": "File Type Allowed",
+    "passed": true,
+    "details": "Extension: .pdf"
+  },
+  {
+    "name": "File Exceeds Size Limit",
+    "passed": true,
+    "details": "2.2 MB exceeds 2 MB by 0.20 MB"
+  }
+]

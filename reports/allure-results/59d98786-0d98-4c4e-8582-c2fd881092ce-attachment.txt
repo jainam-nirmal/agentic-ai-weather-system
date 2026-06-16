@@ -1,0 +1,37 @@
+✓ Fresh browser context created
+✓ File ready: Sample.txt
+{
+  "fileName": "Sample.txt",
+  "filePath": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.txt",
+  "extension": ".txt",
+  "sizeInMB": 0,
+  "maxSizeMB": 2,
+  "isAllowedType": true,
+  "isWithinSizeLimit": true
+}
+✓ Upload page opened: https://demoqa.com/upload-download
+✓ File uploaded: Sample.txt
+✓ Upload confirmed: C:\fakepath\Sample.txt
+{
+  "fileName": "Sample.txt",
+  "fileType": "Text",
+  "uploadedPath": "C:\\fakepath\\Sample.txt",
+  "status": "Success"
+}
+
+───────────────────────────────────────────────────────────
+VALIDATION RESULTS:
+───────────────────────────────────────────────────────────
+1. PASS - File Exists
+   Details: D:\infoBeans\Learning\Demo\agentic-ai-weather-system\agentic-ai-weather-system\test-data\file-types\Sample.txt
+2. PASS - File Type Allowed
+   Details: Extension: .txt
+3. PASS - File Size Within Limit
+   Details: 0 MB (max: 2 MB)
+4. PASS - Upload Path Visible
+   Details: C:\fakepath\Sample.txt
+5. PASS - Uploaded File Name Matches
+   Details: Expected: Sample.txt
+───────────────────────────────────────────────────────────
+
+Browser closed

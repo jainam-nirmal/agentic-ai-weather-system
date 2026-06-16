@@ -22,7 +22,7 @@ import {
 //  FEATURE: Weather API Testing with Enhanced Reporting
 // ════════════════════════════════════════════════════════════
 
-test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
+test.describe('Weather API Test Suite - Enhanced BDD', () => {
 
   // ════════════════════════════════════════════════════════════
   //  SCENARIO 1: Get Weather Report for a City
@@ -37,24 +37,24 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
       const validations = [];
 
       // GIVEN: User wants to get weather data for a city
-      await test.step(`✅ GIVEN: User requests weather data for ${CITY}`, async () => {
-        console.log(`📍 Requesting weather data for: ${CITY}`);
+      await test.step(`GIVEN: User requests weather data for ${CITY}`, async () => {
+        console.log(`Requesting weather data for: ${CITY}`);
       });
 
       // WHEN: User calls the weather API
       await test.step('⏳ WHEN: Weather API is called', async () => {
         report = await getWeatherByCity(request, CITY);
-        console.log('✓ Weather API called successfully');
+        console.log('Weather API called successfully');
       });
 
       // Display full API response
-      await attachResponseData('🔄 Full API Response', report, 'json');
+      await attachResponseData('Full API Response', report, 'json');
 
       // THEN: Response should contain valid weather data
-      await test.step('✅ THEN: Response contains valid weather data', async () => {
+      await test.step('THEN: Response contains valid weather data', async () => {
 
         // ── Validate HTTP responses ──────────────────────
-        await test.step('📊 Step 1: Validate HTTP Status Codes', async () => {
+        await test.step('Step 1: Validate HTTP Status Codes', async () => {
           expect(report._meta.geoStatusCode).toBe(200);
           expect(report._meta.forecastStatusCode).toBe(200);
           
@@ -69,11 +69,11 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
             details: `Status: ${report._meta.forecastStatusCode}`,
           });
           
-          console.log('✓ Both API calls returned HTTP 200');
+          console.log('Both API calls returned HTTP 200');
         });
 
         // ── Validate Location Data ───────────────────────
-        await test.step('📍 Step 2: Validate Location Information', async () => {
+        await test.step('Step 2: Validate Location Information', async () => {
           expect(report.city).toBeTruthy();
           expect(report.country).toBeTruthy();
           
@@ -88,11 +88,11 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
             details: `Country: ${report.country}`,
           });
           
-          console.log(`✓ Location: ${report.city}, ${report.country}`);
+          console.log(`Location: ${report.city}, ${report.country}`);
         });
 
         // ── Validate Current Weather ─────────────────────
-        await test.step('🌡️ Step 3: Validate Current Weather Data', async () => {
+        await test.step('Step 3: Validate Current Weather Data', async () => {
           expect(report.current.temperature).toMatch(/°C$/);
           expect(report.current.condition).toBeTruthy();
           expect(report.current.windSpeed).toMatch(/km\/h$/);
@@ -116,7 +116,7 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
         });
 
         // ── Validate Today's Forecast ────────────────────
-        await test.step('📅 Step 4: Validate Today\'s Forecast', async () => {
+        await test.step('Step 4: Validate Today\'s Forecast', async () => {
           expect(report.today.date).toMatch(/^\d{4}-\d{2}-\d{2}$/);
           expect(report.today.high).toMatch(/°C$/);
           expect(report.today.low).toMatch(/°C$/);
@@ -144,7 +144,7 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
         });
 
         // ── Validate Coordinates ─────────────────────────
-        await test.step('🗺️ Step 5: Validate Geographic Coordinates', async () => {
+        await test.step('Step 5: Validate Geographic Coordinates', async () => {
           expect(report._meta.lat).toBeGreaterThan(-90);
           expect(report._meta.lat).toBeLessThan(90);
           expect(report._meta.lon).toBeGreaterThan(-180);
@@ -186,26 +186,26 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
       let token, header, result;
 
       // GIVEN: A valid JWT token is generated
-      await test.step('✅ GIVEN: Valid JWT token is generated', async () => {
+      await test.step('GIVEN: Valid JWT token is generated', async () => {
         token = generateToken({ userId: 1, role: 'tester' });
         header = bearerHeader(token);
         console.log(`✓ Token generated (preview): ${token.substring(0, 40)}...`);
       });
 
       // Display token in report
-      await attachResponseData('🔐 Generated JWT Token', { 
+      await attachResponseData('Generated JWT Token', { 
         tokenPreview: token.substring(0, 40) + '...',
         header: header,
       }, 'json');
 
       // WHEN: Token is sent to protected endpoint
-      await test.step('⏳ WHEN: Token is sent to protected endpoint', async () => {
+      await test.step('WHEN: Token is sent to protected endpoint', async () => {
         result = protectedEndpoint(header.Authorization);
-        console.log('✓ Request sent to protected endpoint');
+        console.log(' Request sent to protected endpoint');
       });
 
       // THEN: Access should be granted
-      await test.step('✅ THEN: Access should be granted with 200 status', async () => {
+      await test.step('THEN: Access should be granted with 200 status', async () => {
         expect(result.status).toBe(200);
         expect(result.user.userId).toBe(1);
         expect(result.user.role).toBe('tester');
@@ -231,20 +231,20 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
       let expiredToken, result;
 
       // GIVEN: An expired JWT token
-      await test.step('✅ GIVEN: Expired JWT token is generated', async () => {
+      await test.step('GIVEN: Expired JWT token is generated', async () => {
         expiredToken = generateExpiredToken();
-        console.log(`✓ Expired token generated`);
+        console.log(`Expired token generated`);
         await new Promise(r => setTimeout(r, 10));
       });
 
       // WHEN: Expired token is sent to protected endpoint
-      await test.step('⏳ WHEN: Expired token is sent to protected endpoint', async () => {
+      await test.step(' WHEN: Expired token is sent to protected endpoint', async () => {
         result = protectedEndpoint(`Bearer ${expiredToken}`);
-        console.log('✓ Request sent with expired token');
+        console.log('Request sent with expired token');
       });
 
       // THEN: Access should be denied
-      await test.step('✅ THEN: Access should be denied with 401 status', async () => {
+      await test.step('THEN: Access should be denied with 401 status', async () => {
         expect(result.status).toBe(401);
         expect(result.error).toBeTruthy();
         
@@ -268,19 +268,19 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
       let tamperedToken, result;
 
       // GIVEN: A tampered JWT token
-      await test.step('✅ GIVEN: Tampered JWT token is generated', async () => {
+      await test.step('GIVEN: Tampered JWT token is generated', async () => {
         tamperedToken = generateTamperedToken();
-        console.log(`✓ Tampered token generated`);
+        console.log(`Tampered token generated`);
       });
 
       // WHEN: Tampered token is sent to protected endpoint
-      await test.step('⏳ WHEN: Tampered token is sent to protected endpoint', async () => {
+      await test.step('WHEN: Tampered token is sent to protected endpoint', async () => {
         result = protectedEndpoint(`Bearer ${tamperedToken}`);
-        console.log('✓ Request sent with tampered token');
+        console.log('Request sent with tampered token');
       });
 
       // THEN: Access should be denied
-      await test.step('✅ THEN: Access should be denied with 401 status', async () => {
+      await test.step(' THEN: Access should be denied with 401 status', async () => {
         expect(result.status).toBe(401);
         expect(result.error).toBeTruthy();
         
@@ -304,18 +304,18 @@ test.describe('🌍 Weather API Test Suite - Enhanced BDD', () => {
       let result;
 
       // GIVEN: No JWT token is provided
-      await test.step('✅ GIVEN: No JWT token is provided', async () => {
-        console.log('✓ No token in request');
+      await test.step('GIVEN: No JWT token is provided', async () => {
+        console.log('No token in request');
       });
 
       // WHEN: Request is sent to protected endpoint without token
-      await test.step('⏳ WHEN: Request is sent to protected endpoint', async () => {
+      await test.step('WHEN: Request is sent to protected endpoint', async () => {
         result = protectedEndpoint(undefined);
-        console.log('✓ Request sent without token');
+        console.log('Request sent without token');
       });
 
       // THEN: Access should be denied
-      await test.step('✅ THEN: Access should be denied with 401 status', async () => {
+      await test.step('THEN: Access should be denied with 401 status', async () => {
         expect(result.status).toBe(401);
         expect(result.error).toContain('Missing');
         

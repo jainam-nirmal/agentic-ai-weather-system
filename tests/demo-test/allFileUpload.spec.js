@@ -45,9 +45,24 @@ async function launchBrowser() {
 }
 
 async function openUploadPage(page) {
-  await page.goto(UPLOAD_URL, { waitUntil: 'networkidle' });
-  await page.waitForLoadState('domcontentloaded');
-  await page.waitForTimeout(1500);
+  // networkidle can be flaky on ad-heavy public pages; wait for upload input instead.
+  await page.goto(UPLOAD_URL, { waitUntil: 'domcontentloaded' });
+  await page.locator('#uploadFile').waitFor({ state: 'visible', timeout: 15000 });
+  await page.waitForTimeout(1000);
+}
+
+function ensureLargePdfFile(filePath, minSizeMB = 2.2) {
+  const minSizeBytes = Math.ceil(minSizeMB * 1024 * 1024);
+
+  if (fs.existsSync(filePath) && fs.statSync(filePath).size >= minSizeBytes) {
+    return;
+  }
+
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+
+  const pdfHeader = Buffer.from('%PDF-1.4\n');
+  const filler = Buffer.alloc(minSizeBytes - pdfHeader.length, 0x20);
+  fs.writeFileSync(filePath, Buffer.concat([pdfHeader, filler]));
 }
 
 async function runValidFileUploadTest(fileName, fileTypeLabel) {
@@ -56,12 +71,12 @@ async function runValidFileUploadTest(fileName, fileTypeLabel) {
   let browser, context, page, fileDetails, uploadedPathText;
 
   try {
-    await test.step('✅ GIVEN: Browser is launched with a fresh context', async () => {
+    await test.step('GIVEN: Browser is launched with a fresh context', async () => {
       ({ browser, context, page } = await launchBrowser());
       console.log('✓ Fresh browser context created');
     });
 
-    await test.step(`✅ GIVEN: A valid ${fileTypeLabel} file is prepared for upload`, async () => {
+    await test.step(` GIVEN: A valid ${fileTypeLabel} file is prepared for upload`, async () => {
       expect(fs.existsSync(filePath)).toBeTruthy();
       fileDetails = getFileDetails(filePath);
 
@@ -87,14 +102,14 @@ async function runValidFileUploadTest(fileName, fileTypeLabel) {
       console.log(`✓ File ready: ${fileDetails.fileName}`);
     });
 
-    await attachResponseData('📄 File Details', fileDetails, 'json');
+    await attachResponseData('File Details', fileDetails, 'json');
 
-    await test.step('⏳ WHEN: User navigates to DemoQA upload page', async () => {
+    await test.step(' WHEN: User navigates to DemoQA upload page', async () => {
       await openUploadPage(page);
       console.log(`✓ Upload page opened: ${UPLOAD_URL}`);
     });
 
-    await test.step(`⏳ WHEN: User uploads the ${fileTypeLabel} file`, async () => {
+    await test.step(`WHEN: User uploads the ${fileTypeLabel} file`, async () => {
       const fileInput = page.locator('#uploadFile');
       await expect(fileInput).toBeAttached({ timeout: 10000 });
       await fileInput.setInputFiles(filePath);
@@ -102,7 +117,7 @@ async function runValidFileUploadTest(fileName, fileTypeLabel) {
       console.log(`✓ File uploaded: ${fileDetails.fileName}`);
     });
 
-    await test.step('✅ THEN: Uploaded file path is displayed on the page', async () => {
+    await test.step('THEN: Uploaded file path is displayed on the page', async () => {
       const uploadedPath = page.locator('#uploadedFilePath');
       await expect(uploadedPath).toBeVisible({ timeout: 10000 });
 
@@ -124,7 +139,7 @@ async function runValidFileUploadTest(fileName, fileTypeLabel) {
       console.log(`✓ Upload confirmed: ${uploadedPathText}`);
     });
 
-    await attachResponseData('📤 Upload Result', {
+    await attachResponseData('Upload Result', {
       fileName: fileDetails.fileName,
       fileType: fileTypeLabel,
       uploadedPath: uploadedPathText,
@@ -134,10 +149,10 @@ async function runValidFileUploadTest(fileName, fileTypeLabel) {
     await displayValidationResults(validations);
 
   } finally {
-    await test.step('🧹 Cleanup: Close browser resources', async () => {
+    await test.step(' Cleanup: Close browser resources', async () => {
       if (context) await context.close();
       if (browser) await browser.close();
-      console.log('✓ Browser closed');
+      console.log('Browser closed');
     });
   }
 }
@@ -178,7 +193,7 @@ test.describe('📁 DemoQA All File Types Upload - Enhanced BDD', () => {
 
     test('Should identify large PDF file that exceeds 2 MB limit', async () => {
 
-      const largeFile = path.resolve('./test-data/file-types/LargeMB_TestFile.pdf');
+      const largeFile = path.resolve('./test-data/file-types/LargeMB_TestFiles.pdf');
       const validations = [];
       let browser, context, page, fileDetails;
 
@@ -194,6 +209,7 @@ test.describe('📁 DemoQA All File Types Upload - Enhanced BDD', () => {
         });
 
         await test.step('✅ GIVEN: A large PDF file exceeding 2 MB exists', async () => {
+          ensureLargePdfFile(largeFile);
           expect(fs.existsSync(largeFile)).toBeTruthy();
           fileDetails = getFileDetails(largeFile);
 

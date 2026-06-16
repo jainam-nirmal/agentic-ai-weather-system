@@ -1,0 +1,16 @@
+Tampered token generated
+Request sent with tampered token
+  Status: 401
+  Error: invalid signature
+───────────────────────────────────────────────────────────
+JWT Tampered Token Response:
+┌───────────────┬─────────────────────┐
+│ (index)       │ Values              │
+├───────────────┼─────────────────────┤
+│ Status        │ 401                 │
+│ Authenticated │ 'No'                │
+│ Error         │ 'invalid signature' │
+│ User ID       │ 'N/A'               │
+│ User Role     │ 'N/A'               │
+└───────────────┴─────────────────────┘
+───────────────────────────────────────────────────────────

@@ -7,10 +7,12 @@
     "clean:allure": "node scripts/clean-allure.js",
     "allure:generate": "allure generate reports/allure-results -o reports/allure-report --clean",
     "allure:open": "allure open reports/allure-report",
-    "test": "npm run clean:allure && npx playwright test && npm run allure:generate",
-    "weatherTests": "npm run clean:allure && npx playwright test tests/api/weather.spec.js && npm run allure:generate",
-    "uploadFileTests": "npm run clean:allure && npx playwright test tests/uploadFile/allFileUpload.spec.js && npm run allure:generate",
-    "demoTests": "npm run clean:allure && npx playwright test tests/demo-test && npm run allure:generate && npm run allure:open"
+    "test": "node scripts/run-playwright-with-allure.js",
+    "weatherTests": "node scripts/run-playwright-with-allure.js tests/api/weather.spec.js",
+    "uploadFileTests": "node scripts/run-playwright-with-allure.js tests/uploadFile/allFileUpload.spec.js",
+    "demoTests": "node scripts/run-playwright-with-allure.js tests/demo-test",
+    "demoUploadTests": "node scripts/run-playwright-with-allure.js tests/demo-test/allFileUpload.spec.js",
+    "demoWeatherTests": "node scripts/run-playwright-with-allure.js tests/demo-test/weather.bdd.enhanced.spec.js"
    
   },
   "keywords": [],
