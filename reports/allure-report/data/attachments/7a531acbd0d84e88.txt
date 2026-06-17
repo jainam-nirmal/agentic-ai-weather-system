@@ -1,0 +1,35 @@
+Fresh browser context created
+{
+  "fileName": "Sample.pdf",
+  "filePath": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.pdf",
+  "extension": ".pdf",
+  "sizeInMB": 1.27,
+  "maxSizeMB": 2,
+  "exists": true,
+  "isAllowedType": true,
+  "isWithinSizeLimit": true
+}
+PDF file uploaded
+{
+  "fileName": "Sample.pdf",
+  "label": "PDF file",
+  "uploadedPath": "C:\\fakepath\\Sample.pdf",
+  "status": "Success"
+}
+
+───────────────────────────────────────────────────────────
+VALIDATION RESULTS:
+───────────────────────────────────────────────────────────
+1. PASS - File Exists
+   Details: D:\infoBeans\Learning\Demo\agentic-ai-weather-system\agentic-ai-weather-system\test-data\file-types\Sample.pdf
+2. PASS - File Type Allowed
+   Details: .pdf
+3. PASS - File Size Within Limit
+   Details: 1.27 MB <= 2 MB
+4. PASS - Upload Path Visible
+   Details: C:\fakepath\Sample.pdf
+5. PASS - Uploaded File Name Matches
+   Details: Sample.pdf
+───────────────────────────────────────────────────────────
+
+Browser closed

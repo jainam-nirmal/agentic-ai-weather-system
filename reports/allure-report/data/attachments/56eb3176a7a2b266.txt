@@ -1,0 +1,35 @@
+Fresh browser context created
+{
+  "fileName": "Sample.txt",
+  "filePath": "D:\\infoBeans\\Learning\\Demo\\agentic-ai-weather-system\\agentic-ai-weather-system\\test-data\\file-types\\Sample.txt",
+  "extension": ".txt",
+  "sizeInMB": 0,
+  "maxSizeMB": 2,
+  "exists": true,
+  "isAllowedType": true,
+  "isWithinSizeLimit": true
+}
+Text file uploaded
+{
+  "fileName": "Sample.txt",
+  "label": "Text file",
+  "uploadedPath": "C:\\fakepath\\Sample.txt",
+  "status": "Success"
+}
+
+───────────────────────────────────────────────────────────
+VALIDATION RESULTS:
+───────────────────────────────────────────────────────────
+1. PASS - File Exists
+   Details: D:\infoBeans\Learning\Demo\agentic-ai-weather-system\agentic-ai-weather-system\test-data\file-types\Sample.txt
+2. PASS - File Type Allowed
+   Details: .txt
+3. PASS - File Size Within Limit
+   Details: 0 MB <= 2 MB
+4. PASS - Upload Path Visible
+   Details: C:\fakepath\Sample.txt
+5. PASS - Uploaded File Name Matches
+   Details: Sample.txt
+───────────────────────────────────────────────────────────
+
+Browser closed
